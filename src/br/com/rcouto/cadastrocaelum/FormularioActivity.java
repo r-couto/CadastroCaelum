@@ -1,9 +1,13 @@
 package br.com.rcouto.cadastrocaelum;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class FormularioActivity extends ActionBarActivity {
 
@@ -11,6 +15,16 @@ public class FormularioActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.formulario);
+		
+		Button botao = (Button) findViewById(R.id.botao_inserir);
+		botao.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(FormularioActivity.this, "Você clicou no botão inserir.", Toast.LENGTH_LONG).show();
+				
+			}
+		});
 	}
 
 	@Override
