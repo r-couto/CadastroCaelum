@@ -1376,25 +1376,26 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f050003;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f060031;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f060032;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f060034;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f060035;
         public static final int abc_input_method_navigation_guard=0x7f060003;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f060033;
-        public static final int abc_primary_text_disable_only_material_light=0x7f060034;
-        public static final int abc_primary_text_material_dark=0x7f060035;
-        public static final int abc_primary_text_material_light=0x7f060036;
-        public static final int abc_search_url_text=0x7f060037;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f060036;
+        public static final int abc_primary_text_disable_only_material_light=0x7f060037;
+        public static final int abc_primary_text_material_dark=0x7f060038;
+        public static final int abc_primary_text_material_light=0x7f060039;
+        public static final int abc_search_url_text=0x7f06003a;
         public static final int abc_search_url_text_normal=0x7f060000;
         public static final int abc_search_url_text_pressed=0x7f060002;
         public static final int abc_search_url_text_selected=0x7f060001;
-        public static final int abc_secondary_text_material_dark=0x7f060038;
-        public static final int abc_secondary_text_material_light=0x7f060039;
+        public static final int abc_secondary_text_material_dark=0x7f06003b;
+        public static final int abc_secondary_text_material_light=0x7f06003c;
         public static final int accent_material_dark=0x7f06000f;
         public static final int accent_material_light=0x7f06000e;
         public static final int background_floating_material_dark=0x7f060006;
         public static final int background_floating_material_light=0x7f060007;
         public static final int background_material_dark=0x7f060004;
         public static final int background_material_light=0x7f060005;
+        public static final int borda_imagem=0x7f060031;
         /**  White 50% 
          */
         public static final int bright_foreground_disabled_material_dark=0x7f060016;
@@ -1419,6 +1420,8 @@ containing a value of this type.
         public static final int highlighted_text_material_light=0x7f060021;
         public static final int hint_foreground_material_dark=0x7f06001e;
         public static final int hint_foreground_material_light=0x7f06001f;
+        public static final int linha_impar=0x7f060033;
+        public static final int linha_par=0x7f060032;
         public static final int link_text_material_dark=0x7f060022;
         public static final int link_text_material_light=0x7f060023;
         public static final int material_blue_grey_800=0x7f06002e;
@@ -1659,7 +1662,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f09004e;
+        public static final int action_settings=0x7f090051;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
@@ -1674,10 +1677,12 @@ containing a value of this type.
         public static final int edit_query=0x7f090033;
         public static final int end=0x7f09001c;
         public static final int endereco=0x7f090047;
-        public static final int enviar_alunos=0x7f090051;
+        public static final int enviar_alunos=0x7f090054;
         public static final int expand_activities_button=0x7f090022;
         public static final int expanded_menu=0x7f090028;
         public static final int foto=0x7f090040;
+        public static final int foto2=0x7f09004e;
+        public static final int fundo=0x7f09004d;
         public static final int home=0x7f090000;
         public static final int homeAsUp=0x7f09000e;
         public static final int icon=0x7f090026;
@@ -1686,20 +1691,21 @@ containing a value of this type.
         public static final int imageView1=0x7f090042;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090025;
-        public static final int lista_alunos=0x7f09004d;
-        public static final int mapa=0x7f090050;
+        public static final int lista_alunos=0x7f090050;
+        public static final int mapa=0x7f090053;
         public static final int middle=0x7f09001d;
         public static final int never=0x7f090017;
         public static final int nome=0x7f090043;
+        public static final int nome2=0x7f09004f;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
         public static final int nota=0x7f09004b;
-        public static final int novo=0x7f09004f;
-        public static final int preferencias=0x7f090053;
+        public static final int novo=0x7f090052;
+        public static final int preferencias=0x7f090056;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
-        public static final int receber_provas=0x7f090052;
+        public static final int receber_provas=0x7f090055;
         public static final int scrollView1=0x7f09003f;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
@@ -1779,8 +1785,9 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
         public static final int formulario=0x7f030018;
-        public static final int listagem_alunos=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int item=0x7f030019;
+        public static final int listagem_alunos=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
     }
     public static final class menu {
         public static final int formulario=0x7f0c0000;

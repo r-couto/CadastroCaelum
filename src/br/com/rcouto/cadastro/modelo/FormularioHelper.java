@@ -1,10 +1,12 @@
 package br.com.rcouto.cadastro.modelo;
 
-import br.com.rcouto.cadastrocaelum.FormularioActivity;
-import br.com.rcouto.cadastrocaelum.R;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import br.com.rcouto.cadastrocaelum.FormularioActivity;
+import br.com.rcouto.cadastrocaelum.R;
 
 public class FormularioHelper {
 
@@ -13,7 +15,7 @@ public class FormularioHelper {
 	private EditText site;
 	private SeekBar nota;
 	private EditText endereco;
-	private ImageView botaoImagem;
+	private ImageView foto;
 	private Aluno aluno;
 	
 	public FormularioHelper(FormularioActivity activity) {
@@ -23,7 +25,7 @@ public class FormularioHelper {
 		this.site = (EditText) activity.findViewById(R.id.site);
 		this.nota = (SeekBar) activity.findViewById(R.id.nota);
 		this.endereco = (EditText) activity.findViewById(R.id.endereco);
-		this.botaoImagem = (ImageView) activity.findViewById(R.id.foto);
+		this.foto = (ImageView) activity.findViewById(R.id.foto);
 		this.aluno = new Aluno();
 	}
 	
@@ -43,6 +45,23 @@ public class FormularioHelper {
 		this.nota.setProgress(Double.valueOf(aluno.getNota()).intValue());
 		this.endereco.setText(aluno.getEndereco());
 		this.aluno = aluno;
+		
+		if (aluno.getFoto() != null) {
+			this.carregarImagem(aluno.getFoto());
+		}
+		
+	}
+
+	public ImageView getFoto() {
+		return foto;
+	}
+
+	public void carregarImagem(String localArquivoFoto) {
+		Bitmap imageFoto = BitmapFactory.decodeFile(localArquivoFoto);
+		Bitmap imagemFotoReduzida = Bitmap.createScaledBitmap(imageFoto, 100, 100, true);
+		
+		aluno.setFoto(localArquivoFoto);
+		foto.setImageBitmap(imagemFotoReduzida);
 	}
 	
 	

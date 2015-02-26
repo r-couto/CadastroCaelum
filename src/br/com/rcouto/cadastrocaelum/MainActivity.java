@@ -20,6 +20,7 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import br.com.caelum.cadastro.dao.AlunoDAO;
+import br.com.rcouto.cadastro.adapter.ListaAlunosAdapter;
 import br.com.rcouto.cadastro.modelo.Aluno;
 import br.com.rcouto.cadastro.modelo.Extras;
 
@@ -28,7 +29,8 @@ public class MainActivity extends ActionBarActivity {
 	private ListView listaAlunos;
 	private AlunoDAO dao;
 	private List<Aluno> alunos;
-	private ArrayAdapter<Aluno> adapter;
+//	private ArrayAdapter<Aluno> adapter;
+	private ListaAlunosAdapter adapter;
 	private Aluno alunoSelecionado;
 
 	@Override
@@ -167,7 +169,11 @@ public class MainActivity extends ActionBarActivity {
 	
 	private void carregarLista() {
 		alunos = dao.getLista();
-		adapter = new ArrayAdapter<Aluno>(this, android.R.layout.simple_list_item_1, alunos);
+		
+//		adapter = new ArrayAdapter<Aluno>(this, android.R.layout.simple_list_item_1, alunos);
+		adapter = new ListaAlunosAdapter(alunos, this);
+		
+		
 		listaAlunos.setAdapter(adapter);
 	}
 }

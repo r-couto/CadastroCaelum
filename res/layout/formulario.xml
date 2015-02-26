@@ -24,7 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:src="@drawable/ic_launcher2" />
+        android:src="@drawable/ic_no_image" />
 
     <TextView
         android:id="@+id/textView1"
